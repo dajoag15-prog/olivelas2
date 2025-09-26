@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 
+
+
+
 <body>
     <header>
         <nav>
@@ -29,32 +32,76 @@
 
             <h2></h2>
         </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #fff;"></path>
-            </svg></div>
+        
+
+
+       <div class="wave" style="height: 150px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+              style="stroke: none; fill:#faf7fa;"></path> <!-- cambiar #b6c8e0 por tu color de sección -->
+    </svg>
+</div>
+
     </header>
-    <main>
-        <section id="nosotros" class="contenedor sobre-nosotros">
-            <h2 class="titulo">Olivelas ofrece velas decorativas y creativas para toda ocasión</h2>
-            <div class="contenedor-sobre-nosotros">
-                <video class="imagen-about-us" controls autoplay muted loop>
-                 <source src="vid/01.mp4" type="video/mp4">
     
-        </video>
-                <div class="contenido-textos">
-                    <h3><span>1</span>Velas para ocasiones especiales</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                    <h3><span>2</span>Velas creativas y decorativas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                        consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                        velit doloribus laboriosam ut.</p>
-                </div>
-            </div>
-        </section>
+    <section id="nosotros" class="contenedor sobre-nosotros">
+    <h2 class="titulo">Olivelas ofrece velas decorativas y creativas para toda ocasión</h2>
+
+    <!-- Contenedor 1: Video a la izquierda -->
+    <div class="contenedor-sobre-nosotros video-izquierda">
+        <div class="contenedor-video">
+            <video class="imagen-about-us" controls autoplay muted loop>
+                <source src="vid/04.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="contenido-textos">
+            <h3><span>1</span>Velas para ocasiones especiales</h3>
+            <p>
+              Nuestras velas están diseñadas para iluminar los momentos más importantes de tu vida. 
+              Desde bodas y cumpleaños hasta cenas románticas, cada creación aporta un toque único de calidez, 
+              estilo y elegancia.      
+            </p>
+        </div>
+    </div>
+
+    <!-- Contenedor 2: Video a la derecha -->
+    <div class="contenedor-sobre-nosotros video-derecha">
+        <div class="contenedor-video">
+            <video class="imagen-about-us" controls autoplay muted loop>
+                <source src="vid/02.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="contenido-textos">
+            <h3><span>2</span>Elaboradas con material de alta calidad</h3>
+            <p>
+                Cada vela es elaborada cuidadosamente a mano, utilizando ceras y fragancias 
+                de primera calidad que garantizan una combustión limpia, segura y duradera. 
+                El detalle en cada acabado refleja nuestro compromiso con la excelencia y el 
+                arte de crear piezas únicas.
+            </p>
+        </div>
+    </div>
+
+    <!-- Contenedor 1: Video a la izquierda -->
+    <div class="contenedor-sobre-nosotros video-izquierda">
+        <div class="contenedor-video">
+            <video class="imagen-about-us" controls autoplay muted loop>
+                <source src="vid/05.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="contenido-textos">
+            <h3><span>3</span>Iluminando historias</h3>
+            <p>
+              Cada vela es una chispa que transforma momentos en recuerdos inolvidables      
+            </p>
+        </div>
+    </div>
+
+</section>
+
       <section class="portafolio">
     <div class="contenedor">
         <h2 class="titulo">Portafolio - Imágenes 2025</h2>
@@ -104,25 +151,34 @@
 
 
 <section class="videos">
-    <div class="contenedor">
-        <h2 class="titulo">Portafolio - Videos</h2>
+    <h2 class="titulo">Portafolio - Videos</h2>
+    <div class="contenedor-sobre-nosotros video-izquierda">        
         <div class="galeria-videos">
             <div class="video-port">
-                <video width="760" height="515" controls>
+                <video width="560" height="315" controls>
                     <source src="vid/01.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
+                    
                 </video>
             </div>
+    <div class="contenedor-sobre-nosotros video-derecha"></div>
             <div class="video-port">
-                <video width="760" height="515" controls>
-                    <source src="videos/video2.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
+                <video width="560" height="315" controls>
+                    <source src="vid/06.mp4" type="video/mp4">
+                    
                 </video>
             </div>
+    <div class="contenedor-sobre-nosotros video-izquierda"></div>
             <div class="video-port">
-                <video width="760" height="515" controls>
-                    <source src="videos/video3.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de video.
+                <video width="560" height="315" controls>
+                    <source src="vid/07.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+    
+            <div class="video-port">
+                <video width="560" height="315" controls>
+                    <source src="vid/08.mp4" type="video/mp4">
+                    
                 </video>
             </div>
         </div>
@@ -131,29 +187,10 @@
 
 
 
+       
 
-        <section class="about-services">
-            <div class="contenedor">
-                <h2 class="titulo">Nuestros servicios</h2>
-                <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
-                        <h3>Name</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, qui?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
     </main>
     <footer>
         <div class="contenedor-footer">
@@ -182,6 +219,7 @@ function cerrarImagen() {
     document.getElementById("modal").style.display = "none";
 }
 </script>
+
 
 
 
