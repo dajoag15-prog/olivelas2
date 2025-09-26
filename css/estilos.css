@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: 'open sans';
+    background-color: #faf7fa;  /* Cambia #f0f0f0 por el color que quieras */
+    font-family: 'Open Sans', sans-serif; /* Mantener la tipografía */
 }
 
+#nosotros {
+    background-color: #faf7fa;
+}
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -27,11 +30,12 @@ body {
 
 
 
+
 /**/
 
 .logo {
-    width: 180px;        /* ajusta el tamaño a lo que quieras */
-    height: 180px;
+    width: 280px;        /* ajusta el tamaño a lo que quieras */
+    height: 280px;
     border-radius: 50%;  /* lo hace redondo */
     object-fit: cover;   /* mantiene la proporción y recorta si es necesario */
 }
@@ -40,7 +44,7 @@ body {
 header {
     width: 100%;
     height: 600px;
-    background: linear-gradient(to right, #a18cd1, #fbc2eb); /* degradado amigable */
+    background: linear-gradient(to right, #a18cd1, #ecafec); /* degradado amigable */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -49,19 +53,28 @@ header {
 
 nav{
     text-align: center;
-    padding: 30px 50px 0 0;
+    padding: 8px 50px 0 0;
+    position: fixed; /* Hace que el nav se quede fijo */
+    top: 0;          /* Lo pega al borde superior */
+    left: 0;         /* Lo alinea al borde izquierdo */
+    background: linear-gradient(to right, #a18cd1, #ecafec);
+    width: 100%;     /* Ocupa todo el ancho de la pantalla */
+    z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+
+ 
+
 }
 
 nav > a {
-    color: #fff;
+    color: #9b1794;
     font-weight: 500;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 0 13px;
     transition: 0.3s;
 }
 
 nav > a:hover {
-    color: #ffe082; /* tono cálido al pasar */
+    color: #2c3396; /* tono cálido al pasar */
 }
 
 header .textos-header {
@@ -92,30 +105,52 @@ header .textos-header {
 
 /* About us */
 
-main .sobre-nosotros{
-    padding: 30px 0 60px 0;
-}
-.contenedor-sobre-nosotros{
+/* Contenedor principal en flex */
+.contenedor-sobre-nosotros {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px; /* espacio entre contenedores */
 }
 
-.imagen-about-us{
-    width: 300px;  /* ancho del video */
-    height: auto;  /* mantiene la proporción original */
-    border-radius: 10px; /* opcional: esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* opcional: sombra */
+/* Video a la izquierda */
+.video-izquierda {
+    flex-direction: row;
 }
 
-.sobre-nosotros .contenido-textos{
-    width: 48%;
+/* Video a la derecha */
+.video-derecha {
+    flex-direction: row-reverse;
 }
 
-.contenido-textos h3{
+/* Contenedor del video */
+.contenedor-video {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos del video */
+.imagen-about-us {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de textos */
+.sobre-nosotros .contenido-textos {
+    width: 50%;
+}
+
+/* Estilos de títulos y párrafos */
+.contenido-textos h3 {
     margin-bottom: 15px;
 }
 
-.contenido-textos h3 span{
+.contenido-textos h3 span {
     background: #4d0686;
     color: #fff;
     border-radius: 50%;
@@ -128,11 +163,15 @@ main .sobre-nosotros{
     margin-right: 5px;
 }
 
-.contenido-textos p{
+.contenido-textos p {
     padding: 0px 0px 30px 15px;
     font-weight: 300;
     text-align: justify;
+    font-size: 18px;   /* 👈 cambia el tamaño (16px es el normal) */
+    
 }
+
+
 
 /* Galeria */
 /*PRIMERA IMAGEN*/
@@ -216,7 +255,7 @@ main .sobre-nosotros{
     display: flex;
     flex-wrap: wrap;       /* Para que se acomoden en varias filas si hay muchos */
     justify-content: center; /* Centra horizontalmente */
-    gap: 35px;             /* Espacio entre videos */
+    gap: 50px;             /* Espacio entre videos */
 }
 
 .video-port {
@@ -487,4 +526,13 @@ footer{
     .titulo-final{
         font-size: 20px;
     }
+
+
+
+
+
+
+
+
+
 }
