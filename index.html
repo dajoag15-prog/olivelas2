@@ -11,38 +11,45 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
 </head>
 
+<script>
+  const nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {  // cuando el scroll es mayor a 50px
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
 
 
 
 <body>
     <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#nosotros">Acerca de</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-            <a href="https://www.facebook.com/profile.php?id=61571169514152" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/velas3014/" target="_blank">Instagram</a>
-        </nav>
-        <section class="textos-header">
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="#nosotros">Acerca de</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="#">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://www.facebook.com/profile.php?id=61571169514152" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/velas3014/" target="_blank">Instagram</a>
+    </nav>
 
-            <h1>Olivelas</h1>
-            <img src="img/icon.jpg" alt="Logo Olivelas" class="logo">
+    <section class="textos-header">
+      <h1>Olivelas</h1>
+      <img src="img/icon.jpg" alt="Logo Olivelas" class="logo">
+      <h2>Velas artesanales que iluminan tus momentos</h2>
+    </section>
 
-            <h2></h2>
-        </section>
-        
-
-
-       <div class="wave" style="height: 150px; overflow: hidden;">
-    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+    <div class="wave" style="height: 150px; overflow: hidden;">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
         <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-              style="stroke: none; fill:#faf7fa;"></path> <!-- cambiar #b6c8e0 por tu color de sección -->
-    </svg>
-</div>
-
-    </header>
+          style="stroke: none; fill:#faf7fa;"></path>
+      </svg>
+    </div>
+  </header>
     
     <section id="nosotros" class="contenedor sobre-nosotros">
     <h2 class="titulo">🍁✨ Temporada de Otoño en Olivelas ✨🍂</h2>
@@ -192,7 +199,8 @@ Deja que tu hogar se llene de calma, armonía y detalles únicos. 🌿🕯️
 
 
     </main>
-    <footer>
+    <footer id="contacto">
+        
         <div class="contenedor-footer">
             <div class="content-foo">
                 <h4>Numero de contacto</h4>
@@ -208,7 +216,7 @@ Deja que tu hogar se llene de calma, armonía y detalles únicos. 🌿🕯️
             </div>
         </div>
         <h2 class="titulo-final">&copy; Ceci Gervacio | Olivelas</h2>
-    </footer>
+     </footer>
 <script>
 function abrirImagen(img) {
     document.getElementById("modal").style.display = "block";
