@@ -1,16 +1,21 @@
+*/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Fondo general de la página */
 body {
-    background-color: #faf7fa;  /* Cambia #f0f0f0 por el color que quieras */
-    font-family: 'Open Sans', sans-serif; /* Mantener la tipografía */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf7fa; /* Color de fondo neutro */
 }
 
+/* Sección "nosotros" */
 #nosotros {
     background-color: #faf7fa;
 }
+
 .contenedor {
     padding: 60px 0;
     width: 90%;
@@ -26,43 +31,37 @@ body {
     margin-bottom: 60px;
 }
 
-/* Header */
-
-
-
-
-/**/
-
+/* Logo redondo */
 .logo {
-    width: 280px;        /* ajusta el tamaño a lo que quieras */
-    height: 280px;
-    border-radius: 50%;  /* lo hace redondo */
-    object-fit: cover;   /* mantiene la proporción y recorta si es necesario */
+    width: 200px;        
+    height: 200px;
+    border-radius: 50%;  
+    object-fit: cover;   
 }
 
-
+/* Header con imagen y degradado */
 header {
     width: 100%;
     height: 600px;
-    background: linear-gradient(to right, #a18cd1, #ecafec); /* degradado amigable */
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("../img/otoño.jpg"); /* asegúrate de que la ruta sea correcta */
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     position: relative;
 }
 
-
-nav{
+/* Barra de navegación fija */
+nav {
     text-align: center;
-    padding: 8px 50px 0 0;
-    position: fixed; /* Hace que el nav se quede fijo */
-    top: 0;          /* Lo pega al borde superior */
-    left: 0;         /* Lo alinea al borde izquierdo */
+    padding: 3px 50px 0 0;
+    position: fixed; 
+    top: 0;          
+    left: 0;         
     background: linear-gradient(to right, #a18cd1, #ecafec);
-    width: 100%;     /* Ocupa todo el ancho de la pantalla */
-    z-index: 1000;   /* Asegura que esté por encima de otros elementos */
-
- 
-
+    width: 100%;     
+    z-index: 1000;   
 }
 
 nav > a {
@@ -87,7 +86,7 @@ header .textos-header {
 }
 
 .textos-header h1{
-    font-size: 50px;
+    font-size: 30px;
     color:#fff;
 }
 
@@ -126,7 +125,7 @@ header .textos-header {
 
 /* Contenedor del video */
 .contenedor-video {
-    width: 45%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +181,7 @@ header .textos-header {
 }
 
 .galeria-port1 img {
-    width: 750px;  /* más grande */
+    width: 450px;  /* más grande */
     height: auto;
     cursor: pointer;
     transition: transform 0.3s;
