@@ -37,6 +37,32 @@ body {
 
 /* Logo redondo */
 
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;    /* distancia desde abajo */
+  right: 20px;     /* distancia desde la derecha */
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+
 /* Header con imagen y degradado */
 header {
     width: 100%;
@@ -89,6 +115,15 @@ nav a:hover {
 html {
   scroll-behavior: smooth;
 }
+
+.texto-otono {
+  text-align: center;      /* centra el texto */
+  max-width: 600px;        /* limita ancho para que no quede de lado a lado */
+  margin: 0 auto;          /* centra el bloque en la página */
+  font-family: "Segoe UI", sans-serif;
+  padding: 50px 0;
+}
+
 
 
 .textos-header {
@@ -202,6 +237,9 @@ html {
 
 /* Galeria */
 /*PRIMERA IMAGEN*/
+
+
+
 .galeria-port1 {
     display: flex;
     justify-content: center; /* centra la imagen */
@@ -219,6 +257,12 @@ html {
     transform: scale(1.05);
 }
 /*PRIMERA IMAGEN*/
+.imagen-port {
+  display: flex;
+  flex-direction: column;  /* imagen arriba, caption abajo */
+  align-items: center;     /* centra horizontalmente */
+  justify-content: center; /* centra verticalmente si le das altura fija */
+}
 
 
 .galeria-port {
@@ -273,22 +317,25 @@ html {
 
 
 .video-port video {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px; /* opcional: esquinas redondeadas */
     box-shadow: 0px 4px 12px rgba(0,0,0,0.2); /* opcional: sombra */
+    justify-content: flex-end;
 }
 .galeria-videos {
     display: flex;
-    flex-wrap: wrap;       /* Para que se acomoden en varias filas si hay muchos */
-    justify-content: center; /* Centra horizontalmente */
-    gap: 50px;             /* Espacio entre videos */
+    flex-direction: column;  /* 👈 coloca los elementos en columna */
+    align-items: center;     /* centra horizontalmente */
+    gap: 65px;               /* espacio entre videos */
 }
+
 
 .video-port {
     display: flex;
     justify-content: center; /* Centra cada video dentro de su contenedor */
     align-items: center;
+    gap: 5px;
 }
 
 
