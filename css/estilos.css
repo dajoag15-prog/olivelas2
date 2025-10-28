@@ -32,7 +32,7 @@ body {
     color: #642a73;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 } 
 
 /* Logo redondo */
@@ -287,7 +287,8 @@ html {
     display: none; 
     position: fixed;
     z-index: 1000;
-    padding-top: 50px;
+    /*padding-top: 230px;*/
+    padding-top: 210px;
     left: 0;
     top: 0;
     width: 100%;
@@ -299,15 +300,15 @@ html {
 .modal-contenido {
     display: block;
     margin: auto;
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
 }
 
 .cerrar {
     position: absolute;
-    top: 20px;
-    right: 40px;
+    top: 90px;
+    right: 10px;
     color: #fff;
     font-size: 40px;
     font-weight: bold;
