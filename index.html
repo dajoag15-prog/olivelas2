@@ -222,16 +222,36 @@ Deja que tu hogar se llene de calma, armonía y detalles únicos. 🌿🕯️
         </div>
         <h2 class="titulo-final">&copy; Ceci Gervacio | Olivelas</h2>
      </footer>
+
+
 <script>
 function abrirImagen(img) {
-    document.getElementById("modal").style.display = "block";
-    document.getElementById("imgAmpliada").src = img.src;
+    const modal = document.getElementById("modal");
+    const imgAmpliada = document.getElementById("imgAmpliada");
+
+    imgAmpliada.src = img.src;
+    modal.classList.add("mostrar");
 }
 
 function cerrarImagen() {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById("modal").classList.remove("mostrar");
 }
 </script>
+
+
+
+<script>
+  const nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
 
 
 
