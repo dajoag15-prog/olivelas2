@@ -1,6 +1,9 @@
 // ===============================================
 //   AÑADIR AL CARRITO DESDE LA TIENDA
 // ===============================================
+
+const BASE_URL = "https://dajoag15-prog.github.io/olivelas2/";
+
 function agregarAlCarrito(codigo, nombre, precio, idCantidad, imagen) {
 
     let cantidad = parseInt(document.getElementById(idCantidad).value);
@@ -240,6 +243,7 @@ Gracias por su compra.
     // Abrir WhatsApp
     window.open(url, "_blank");
 }
+
 
 
 
