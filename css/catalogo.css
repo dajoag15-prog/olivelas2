@@ -1,0 +1,75 @@
+/* ---------- Submenú desplegable (por clic) ---------- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  color: #470e7c;
+  font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropbtn:hover {
+  color: #611861;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(6px);
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #dd7070;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 128, 171, 0.1);
+  color: #ff80ab;
+}
+
+/* Cuando el menú está activo */
+.dropdown-content.show {
+  display: block;
+}
+
+
+/* BOTON DE TIENDA*/
+.btn-flotante {
+  position: fixed;
+  right: 20px;               /* 🔥 Lado izquierdo */
+  bottom: 80px;             /* 🔥 Altura desde abajo */
+  width: 50px;
+  height: 50px;
+  background-color: #642a73;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 9999;            /* Siempre encima */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-flotante:hover {
+  background-color: #4b2057;
+  transform: scale(1.1);
+}
