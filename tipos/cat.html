@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>olivelas</title>
+    <link rel="shortcut icon" href="../img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <link rel="preload" as="image" href="../img/navidadp.jpg">
+</head>
+
+  <!-- Navegación -->
+<header style="--header-bg: url('../img/navidadp.jpg');">
+    <nav>
+  <a href="../index.html">Inicio</a>
+  <a href="#nosotros">Acerca de</a>
+
+  <div class="dropdown">
+    <a href="#" class="dropbtn" id="catalogoBtn">Catálogo ▾</a>
+    <div class="dropdown-content" id="catalogoMenu">
+      <a href="cat.html">Creaciones de Temporada</a>
+      <a href="otoño.html">Otoño</a>
+      <a href="rosas.html">Rosas</a>
+      <a href="fe.html">Fe</a>
+    </div>
+  </div>
+
+  <a href="#">Servicios</a>
+  <a href="#contacto">Contacto</a>
+  <a href="https://www.facebook.com/profile.php?id=61571169514152" target="_blank">Facebook</a>
+  <a href="https://www.instagram.com/velas3014/" target="_blank">Instagram</a>
+    </nav>
+
+    <section class="textos-header">
+      <h1>Olivelas</h1>
+      <img src="../img/icon.jpg" alt="Logo Olivelas" class="logo">
+      <h2>Velas artesanales que iluminan tus momentos</h2>
+    </section>
+
+    <div class="wave" style="height: 150px; overflow: hidden;">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill:#faf7fa;"></path>
+      </svg>
+    </div>
+  </header>
+
+ 
+
+
+  <!-- Productos / catálogo -->
+  <section id="productos" class="contenedor">
+    <h2 class="titulo">🎄Colección Navidad🎄</h2>
+
+   <div class="texto-otono">
+  <h2>🎁El aroma perfecto para darle a tu hogar la calidez de la temporada🎁</h2><br>
+  <p>
+  Una mezcla única de cedro y naranja, elaborada con cera de soya artesanal,
+  hecha con amor y respeto al medio ambiente. 🌱🕯️
+  Haz que cada rincón se llene de armonía y frescura. 💛
+  📩 Envíame mensaje para más información o pedidos.
+  </p>
+ 
+</div>
+
+
+    <!-- SECCION DE temporada-->
+
+     <div class="galeria-port" aria-label="lista de productos">
+
+      <figure class="imagen-port" style="position:relative;">Código: N1 <br> 
+        <img src="../img/navidad/01.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Rosa Tipo 1 <br>Altura= 11cm <br>Peso= 187gr <br> <strong>$180 c/u</strong></figcaption>
+      
+        <input type="number" class="cantidad" id="cant-N1" value="1" min="1">
+
+        <button class="btn-carrito"
+        onclick="agregarAlCarrito(
+        'N1',
+        'Arbol Rosa Tipo 1',
+        180,
+        'cant-N1',
+        '../img/navidad/01.jpg')">
+         Agregar a mi compra
+        </button>
+
+
+
+
+      </figure>
+
+
+      <figure class="imagen-port" style="position:relative;">Código: N2 <br>
+        <img src="../img/navidad/02.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Rosa Tipo 2 <br>Altura= 9.5cm <br>Peso= 80gr <br> <strong>$80 c/u</strong></figcaption>
+        <input type="number" class="cantidad" id="cant-N2" value="1" min="1">
+        <button class="btn-carrito"
+        onclick="agregarAlCarrito(
+        'N2',
+        'Arbol Rosa Tipo 2',
+        80,
+        'cant-N2',
+        '../img/navidad/02.jpg')">
+         Agregar a mi compra
+        </button>
+
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N3 <br>
+        <img src="../img/navidad/03.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Rosa Tipo 3 <br>Altura= 9.5cm <br>Peso= 63gr <br> <strong>$65 c/u</strong></figcaption>
+        <input type="number" class="cantidad" id="cant-N3" value="1" min="1">
+        <button class="btn-carrito"
+        onclick="agregarAlCarrito(
+        'N3',
+        'Arbol Rosa Tipo 3',
+        65,
+        'cant-N3',
+        '../img/navidad/03.jpg')">
+         Agregar a mi compra
+        </button>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N4 <br>
+        <img src="../img/navidad/04.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Moño Rosa <br>Altura= 8cm <br>Peso= 97gr <br> <strong>$100 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N5 <br>
+        <img src="../img/navidad/05.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 1 <br>Altura= 10cm <br>Peso= 93gr <br><strong>$95 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N6 <br>
+        <img src="../img/navidad/06.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 2 <br>Altura= 9cm <br>Peso= 79gr <br> <strong>$80 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N7 <br>
+        <img src="../img/navidad/07.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 3 <br>Altura= 9.5cm <br>Peso= 62gr <br> <strong>$65 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N8 <br>
+        <img src="../img/navidad/08.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 4 <br>Altura= 8cm <br>Peso= 77gr <br> <strong>$75 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N9 <br>
+        <img src="../img/navidad/09.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 5 <br>Altura= 7.5cm <br>Peso= 43gr <br> <strong>$45 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N10 <br>
+        <img src="../img/navidad/10.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 6 <br>Altura= 9cm <br>Peso= 65gr <br> <strong>$65 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N11 <br>
+        <img src="../img/navidad/11.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 7 <br>Altura= 9cm <br>Peso= 81gr <br> <strong>$81 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N12 <br>
+        <img src="../img/navidad/12.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 8 <br>Altura= 7.5cm <br>Peso= 49gr <br> <strong>$50 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N13 <br>
+        <img src="../img/navidad/13.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Verde Tipo 9 <br>Altura= 9cm <br>Peso= 48gr <br> <strong>$50 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N14 <br>
+        <img src="../img/navidad/14.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Piña de Pino <br>Altura= 7.5cm <br>Peso= 110gr <br> <strong>$110 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N15 <br>
+        <img src="../img/navidad/15.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Galleta Jengibre <br>Altura= 7.5cm <br>Peso= 43gr <br> <strong>$45 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N16 <br>
+        <img src="../img/navidad/16.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Santa Claus <br>Altura= 9.5cm <br>Peso= 146gr <br> <strong>$150 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N17 <br>
+        <img src="../img/navidad/17.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 1 <br>Altura= 10.5cm <br>Peso= 118gr <br> <strong>$115 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N18 <br>
+        <img src="../img/navidad/18.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 2 <br>Altura= 9.5cm <br>Peso= 66gr <br> <strong>$65 c/u</strong></figcaption>
+      </figure>
+      
+      <figure class="imagen-port" style="position:relative;">Código: N19 <br>
+        <img src="../img/navidad/19.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 3 <br>Altura= 9.5cm <br>Peso= 139gr <br> <strong>$140 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N20 <br>
+        <img src="../img/navidad/20.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 4 <br>Altura= 9.5cm <br>Peso= 123gr <br> <strong>$120 c/u</strong></figcaption>
+      </figure>
+
+
+      <figure class="imagen-port" style="position:relative;">Código: N21 <br>
+        <img src="../img/navidad/21.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 5 <br>Altura= 9.5cm <br>Peso= 56gr <br> <strong>$60 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N22 <br>
+        <img src="../img/navidad/22.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 6 <br>Altura= 8cm <br>Peso= 79gr <br> <strong>$80 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N23 <br>
+        <img src="../img/navidad/23.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 7 <br>Altura= 9.5cm <br>Peso= 70gr <br> <strong>$70 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N24 <br>
+        <img src="../img/navidad/24.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 8 <br>Altura= 6cm <br>Peso= 31gr <br> <strong>$30 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N25 <br>
+        <img src="../img/navidad/25.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 9 <br>Altura= 5cm <br>Peso= 14gr <br> <strong>$15 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N26 <br>
+        <img src="../img/navidad/26.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Arbol Blanco Tipo 10 <br>Altura= 6cm <br>Peso= 28gr <br> <strong>$28 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N27 <br>
+        <img src="../img/navidad/27.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Galleta Santa  <br>Altura= 6.5cm <br>Peso= 37gr <br> <strong>$35 c/u</strong></figcaption>
+      </figure>
+
+       <figure class="imagen-port" style="position:relative;">Código: N28 <br>
+        <img src="../img/navidad/28.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Galleta Muñeco Nieve  <br>Altura= 6.5cm <br>Peso= 44gr <br> <strong>$45 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N29 <br>
+        <img src="../img/navidad/29.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Mono Nieve 1  <br>Altura= 9cm <br>Peso= 101gr <br> <strong>$100 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N30 <br>
+        <img src="../img/navidad/30.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Alce  <br>Altura= 6.5cm <br>Peso= 28gr <br> <strong>$30 c/u</strong></figcaption>
+      </figure>
+
+      <figure class="imagen-port" style="position:relative;">Código: N31 <br>
+        <img src="../img/navidad/31.jpg" alt="" onclick="abrirImagen(this)">
+        <figcaption style="text-align:center; padding-top:8px;">Mono Nieve 2  <br>Altura= 6.5cm <br>Peso= 41gr <br> <strong>$40 c/u</strong></figcaption>
+      </figure>
+      
+
+    </div>
+  
+  </section>
+
+   <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/524611303932" class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+<a href="../carrito.html" class="btn-flotante">
+  🛒
+</a>
+
+  
+
+<!-- Ventana emergente -->
+<div id="modal" class="modal" onclick="cerrarImagen()">
+    <span class="cerrar">&times;</span>
+    <img id="imgAmpliada" class="modal-contenido">
+</div>
+
+
+
+
+
+  <!-- Sobre nosotros -->
+  <section id="nosotros" class="contenedor">
+    <h2 class="titulo">Información</h2>
+
+    <div class="contenedor-sobre-nosotros sobre-nosotros">
+      <div class="contenedor-video video-izquierda">
+        <img class="imagen-about-us" src="../img/portada.jpg" alt="artesana vertiendo cera">
+      </div>
+
+      <div class="contenido-textos">
+        <h3><span>1</span> Artesanía local</h3>
+        <p>Somos un pequeño taller familiar que elabora velas con ingredientes naturales. Cada vela se prueba a mano y se perfila para asegurar su calidad.</p>
+        <h3><span>2</span> Ingredientes sostenibles</h3>
+        <p>Usamos cera de soja, aceites esenciales y mechas de algodón. Apostamos por productos libres de tóxicos y respetuosos con el medio ambiente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto">
+        
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Numero de contacto</h4>
+                <p>461-578-58-98</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>8296312</p>
+            </div>
+            <div class="content-foo">
+                <h4>ubicación</h4>
+                <p>Villagrán Gto, Celaya Gto</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Ceci Gervacio | Olivelas</h2>
+     </footer>
+
+
+
+<script src="../js/menu.js" defer></script>
+<script src="../js/carrito.js" defer></script>
+<div id="toast">Producto agregado al carrito</div>
+
+
+
+
+</body>
+</html>
+
+
+
